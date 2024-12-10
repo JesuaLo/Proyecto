@@ -1,3 +1,3 @@
 function abrirPagina(pagina) {
-    window.open(pagina, "_blank");
+    window.open(pagina, "_self");
 }

@@ -40,7 +40,7 @@ nav {
 .navlinks {
     display: flex;
     list-style-type: none;
-    row-gap: 1em;
+    align-items: center;
 }
 
 .navlinks li{
@@ -53,8 +53,8 @@ nav {
     vertical-align: middle;
     margin-left: 1em;
     margin-right: 1em;
-    padding-top: 1em;
     width: 100px;
+    margin-bottom: 0.1em;
 }
 
 .navlinks .button, .logbutton {
@@ -79,14 +79,18 @@ nav {
 }
 
 .navlinks>li:hover>.submenu{
+    min-width: 400px;
     visibility: visible;
     height: fit-content;
     width: 10em;
-    background:rgba(245, 90, 29, .5);
+    background:rgba(245, 90, 29, .8);
     list-style-type: none;
     border-radius: 8px;
 }
 
+.submenu .button{
+    min-width:inherit
+}
 
 #logo {
     height: 15vh;
@@ -96,26 +100,27 @@ nav {
 
 .fondomedio-degradado-izquierda {
     background: linear-gradient(to left, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 60%), url('/img/Gear-TTRPG-Rule-Books-1310338470.png');
-    background-size: cover;  /* Asegura que la imagen cubra todo el área */
-    background-position: center; /* Centra la imagen */
-    height: 82vh;  /* Puedes ajustar la altura según lo necesites */
+    background-size: cover; 
+    background-position: center;
+    height: 82vh;
     padding: 0%;
 }
 
 footer {
     position: relative;
     background-color: #000;
-    height: 10vh
+    height: 10vh;
+    position: bottom;
 }
 
 .contenedor-personajes{
-    display:flex
+    display:flex;
+    align-items: center;
 }
 
 .ttrpg {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: center;
     max-width: 20vh;
     margin-left:1em;
     padding: 2em;
